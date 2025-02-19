@@ -6,12 +6,9 @@
 ## Process:
 ### 1. Import data from Wholesale_Data.csv
 ### 2. Clean up data:
-   - The data was pretty clean out of the box, I chose to standardize the data because of the models we were using and the vast disparity between client size. I also did not want to remove outliers because all of this data is real customer sales data and relevant to the overall picture for this wholesaler.
+   - The data was pretty clean out of the box, I chose to standardize the data because of the models I was using and the vast disparity between client size. I also did not want to remove outliers because all of this data is real customer sales data and relevant to the overall picture for this wholesaler.
 ### 3. Visualize the data
-   - We ran a number of different visualizations to get an idea of how the data was distributed and also how it was correlated.
-   ![Histograms of All Variables](https://raw.githubusercontent.com/colterwood/ml-project-unsupervised-learning/main/visualizations/histograms.png)
-
-
+   - I ran a number of different visualizations to get an idea of how the data was distributed and also how it was correlated. I used pairplots and heatmaps to compare features, the distribution, and their correlation.
 ### 4. Feature Selection
    - I found that 'Grocery' and 'Detergents_Paper' were highly correlated, as you can see in the correlation heatmap, so I chose to remove 'Detergents_Paper' due to multicollinearity.
    - Next I ran a PCA to see if any features had low variance and I found that 'Delicassen' had essentially a 1% variance, so I removed that as well.
